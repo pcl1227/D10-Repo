@@ -1,0 +1,14 @@
+header {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+header h1 {
+    text-align: center;
+}
+
+footer {
+    font-weight: bold;
+    font-size: 125%;
+    text-align: center;
+}
