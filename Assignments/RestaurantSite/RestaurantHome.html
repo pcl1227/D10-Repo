@@ -1,30 +1,75 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Capri's Catering - Home</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css"
 			href="Styles/restaurantStyles.css" />
 	</head>
 	
 	<body>
-		<header class="header">Menu
-			<hr />
-			<h1>Capri's Catering</h1>
-			<hr />
-			<a href="RestaurantHome.html">Home</a>
-			<a href="Menu.html">Menu</a>
-			<a href="Contact.html">Contact Us</a>
-			<hr />
-		</header>
+		<noscript>
+			<style type="text/css">
+				.page {display:none;}
+			</style>
+			<div class="noscriptmsg">
+			This site is best viewed with JavaScript enabled.
+			</div>
+		</noscript>
+		<div class="container page">
+			<header class="header jumbotron row">Home Page<hr />
+				<div class="jumbotron text-md-right" id="news">
+					<h1>Capri's Catering</h1>
+					<h3>New Location Opening in Champaign, IL!</h3>
+					<h4>Coming Soon: April 2020</h4>
+				</div>
+				<nav class="row col-lg-12 col-md-12 col-sm-12">
+					<a class="btn badge-pill" href="RestaurantHome.html">
+						<span class="iconify" data-icon="octicon:home" data-inline="false"></span>
+						Home</a>
+					<a class="btn badge-pill" href="Menu.html">Menu</a>
+					<a class="btn badge-pill" href="Contact.html">Contact Us</a>
+				</nav>
+			</header>
 
 		<div style="background-color: rgb(212, 185, 96)">
+			<div class="container">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				  <!--Indicators-->
+				  	<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+				  	</ol>
+			  
+				  <!--Wrapper-->
+				 	<div class="carousel-inner">
+						<div class="carousel-item active" id="carouselLocation">
+						  	<img src="Images\location.jpg" alt="New Champaign Location" style="width:100%;">
+						  	<div class="carousel-caption">New Location Opening in Champaign, IL: April 2020</div>
+						</div>
+			  
+						<div class="carousel-item" id="carouselMenu">
+						  	<img src="Images\spring.jpg" alt="Seasonal Spring Menu" style="width:100%;">
+						  	<div class="carousel-caption menuCaption">New Seasonal Spring Menu Available Now!</div>
+						</div>
+				  
+						<div class="carousel-item" id="carouselDrink">
+					 	  	<img src="Images\drink.jpg" alt="New SG Special Brew" style="width:100%;">
+					 	  	<div class="carousel-caption">Drink of the Month: The SG Special Brew!</div>
+						</div>
+				  	</div>
+				</div>
+			</div>
 		<br />
-		<center><section style="width: 400px;">
+		<center><section style="width: 50%;">
 		<img src="Images/Tables.jpeg" alt="Tables in Restaurant" 
 			style="margin-left: auto; margin-right: auto;
-			width: 400px; height: 150px;" />
+				width: 100%" />
 		<br />
-		<p align="left"><strong>About Our Restaurant</strong><br />
+		<p text-align="left"><strong>About Our Restaurant</strong><br />
 			<!--ADD RESTAURANT DESCRIPTION-->
 			Established in 2005, Capri's Restaurant has been serving burgers 
 			and sandwiches to Chicago's residents for over a decade. The recipe
@@ -40,6 +85,11 @@
 			<hr />
 			<p>2822 W. Road St., Chicago, IL, 52401</p>
 			<p>P: 574-555-3462</p>
-		</footer>			
+		</footer>	
+		</div>
+		<script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>		
 	</body>
 </html>

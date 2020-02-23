@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Capri's Catering - Contact Us</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css"
 			href="Styles/restaurantStyles.css" />
 		<style>
@@ -9,61 +12,172 @@
 				text-align: center;
 				font-size: larger;
 				font-weight:500;
+				width: 50%;
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 			p {
 				font-weight: bold;
 			}
+
+			.btn-primary:hover {
+				font-weight: bold;
+			}
+
 		</style>
 	</head>
 	
 	<body>
-		<header class="header">Menu
-			<hr />
-			<h1>Capri's Catering</h1>
-			<hr />
-			<a href="RestaurantHome.html">Home</a>
-			<a href="Menu.html">Menu</a>
-			<a href="Contact.html">Contact Us</a>
-			<hr />
-		</header>
+		<noscript>
+			<style type="text/css">
+				.page {display:none;}
+			</style>
+			<div class="noscriptmsg">
+			This site is best viewed with JavaScript enabled.
+			</div>
+		</noscript>
+		<div class="container">
+			<header class="header jumbotron row">Contact Us<hr />
+				<div class="jumbotron text-md-right" id="news">
+					<h1>Capri's Catering</h1>
+					<h3>New Location Opening in Champaign, IL!</h3>
+					<h4>Coming Soon: April 2020</h4>
+				</div>
+				<nav class="row col-lg-12 col-md-12 col-sm-12">
+					<a class="btn badge-pill" href="RestaurantHome.html">
+						<span class="iconify" data-icon="octicon:home" data-inline="false"></span>
+						Home</a>
+					<a class="btn badge-pill" href="Menu.html">Menu</a>
+					<a class="btn badge-pill" href="Contact.html">Contact Us</a>
+				</nav>
+			</header>
 
 		<br />
-		<form action="fakePage.html" method="POST">
-			<p>Name: <input type="text" name="Name" required /><br />
+		<form action="" method="POST" class="needs-validation" novalidate>
+			<!--doesn't send results anywhere-->
+			<div class="form-group">
+				<label for="inputName1" class="form-label">Name</label>
+				<input type="text" class="form-control" name="Name" 
+					id="inputName1" placeholder="Name" required />
+					<div class="valid-feedback">
+						Looks good!
+					</div>
+					<div class="invalid-feedback">
+						Please enter your name.
+					</div>
+				<br />
+				<br />
+				<div class="form-row">
+					<div class="col-6">
+						<label for="inputEmail1" class="form-label">Email</label>
+						<input type="text" class="form-control" name="Email"
+						id="inputEmail1" placeholder="Email" required />
+						<div class="valid-feedback">
+							Looks good!
+						</div>
+						<div class="invalid-feedback">
+							Please provide a valid email.
+						</div>
+					</div>
+					<div class="col-6">	
+						<label for="inputPhone1" class="form-label">Phone</label>
+						<input type="text" class="form-control" name="Phone"
+						id="inputPhone1" placeholder="(###) ###-####" required />
+						<div class="valid-feedback">
+							Looks good!
+						</div>
+						<div class="invalid-feedback">
+							Please provide a valid phone number.
+						</div>
+						<br />
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-5">
+				<label for="inputInquiry1" class="form-label">Reason for Inquiry</label> 
+					<select class="form-control">
+						<option name="Catering" selected>Catering</option>
+						<option name="Party">Private Party</option>
+						<option name="Feedback">Feedback</option>
+						<option name="Other">Other</option>
+					</select>
+				</div>
+			</div>	
+			<div class="form-group">
+				<label for="additionalInformation">Additional Information</label>
+				<textarea class="form-control" id="additionalInformation1" rows="3"></textarea>
+			</div>
 			<br />
-			Email: <input type="text" name="Email" required /><br />
-			<br />
-			Phone: <input type="text" name="Phone" required /><br /></p>
-			<br />
-			Reason for Inquiry: 
-				<select name="Inquiry">
-					<option name="Catering" selected>Catering</option>
-					<option name="Party">Private Party</option>
-					<option name="Feedback">Feedback</option>
-					<option name="Other">Other</option>
-				</select><br />
-				<br />
-			Additional Information: 
-				<textarea name="AdditionalInformation"></textarea></br>
-				<br />
-			Have you been to the restaurant? 
-				<input type="radio" name="answer" value="YES" checked />No
-				<input type="radio" name="answer" value="YES" />Yes<br />
-				<br />
-			Best days to contact you: 
-				<input type="checkbox" name="days" value="Monday" />M
-				<input type="checkbox" name="days" value="Tuesday" />T
-				<input type="checkbox" name="days" value="Wednesday" />W
-				<input type="checkbox" name="days" value="Thursday" />Th
-				<input type="checkbox" name="days" value="Friday" />F<br />
-				<br />
-			<input type="submit" value="Send Request" />
+			<div class="form-group">
+				<label for="attendance">Have you been to the restaurant?</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="radiobtn" id="radioBtn1" value="option1">
+					<label class="form-check-label" for="radioBtn1">No</label>
+			 	 </div>
+			 	 <div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="radiobtn" id="radioBtn2" value="option2">
+					<label class="form-check-label" for="radioBtn2">Yes</label>
+				  </div>
+			</div>
+			<div class="form-group">
+				<label for="contactDays" style="margin-right: 5px">Best days to contact you:</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="Monday" value="option1">
+					<label class="form-check-label" for="check1">M</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="Tuesday" value="option2">
+					<label class="form-check-label" for="check2">T</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="Wednesday" value="option3">
+					<label class="form-check-label" for="check3">W</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="Thursday" value="option2">
+					<label class="form-check-label" for="check4">Th</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="Friday" value="option3">
+					<label class="form-check-label" for="check5">F</label>
+				</div>
+			</div>
+
+			<button type="submit" class="btn btn-primary">Send Request</button>
 		</form>
+
+		<script>
+			// Example starter JavaScript for disabling form submissions if there are invalid fields
+			(function() {
+			  'use strict';
+			  window.addEventListener('load', function() {
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				var forms = document.getElementsByClassName('needs-validation');
+				// Loop over them and prevent submission
+				var validation = Array.prototype.filter.call(forms, function(form) {
+				  form.addEventListener('submit', function(event) {
+					if (form.checkValidity() === false) {
+					  event.preventDefault();
+					  event.stopPropagation();
+					}
+					form.classList.add('was-validated');
+				  }, false);
+				});
+			  }, false);
+			})();
+			</script>
+
 		<footer class="footer">
 			<hr />
 			<p>2822 W. Road St., Chicago, IL, 52401</p>
 			<p>P: 574-555-3462</p>
-		</footer>			
+		</footer>	
+		</div>
+		<script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>		
 	</body>
 </html>

@@ -14,8 +14,21 @@ header a {
     font-weight: normal;
 }
 
+nav {
+    border-top: thin #5b7d87 solid;
+    border-bottom: thin #5b7d87 solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+nav .btn {
+    background-color: #5b7d87;
+    color: #fef9ff;
+    margin-right: 5px;
+}
+
 a:visited {
-    color: rgb(65, 131, 85);
+    color: rgb(220, 224, 222);
 }
 
 a:hover {
@@ -26,8 +39,21 @@ a:active {
     text-decoration: none;
 }
 
+.carousel {
+    padding-top: 15px;
+}
+
+.carousel-caption {
+    font-size: 150%;
+}
+
 footer {
     font-weight: bold;
     font-size: 125%;
     text-align: center;
+}
+
+footer hr {
+    height: 2px;
+    color: black;
 }
