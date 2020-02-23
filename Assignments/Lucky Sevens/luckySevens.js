@@ -38,4 +38,15 @@ function diceRoll() {
 		document.getElementById("rollCount").innerHTML=rollCount;
 		document.getElementById("moneyMax").innerHTML="$"+maxMoney;
 		document.getElementById("moneyMaxCount").innerHTML=countAtMax;
+
+	function showTable() {
+		var table = document.getElementById('resultsTable');
+		var display = table.style.display;
+
+		if (table.style.display == 'none') {
+			table.style.display = 'block';
+		}
+	}
+
+	showTable();
 }
