@@ -4,6 +4,17 @@
 		<title>Capri's Catering - Contact Us</title>
 		<link rel="stylesheet" type="text/css"
 			href="Styles/restaurantStyles.css" />
+		<style>
+			form {
+				text-align: center;
+				font-size: larger;
+				font-weight:500;
+			}
+
+			p {
+				font-weight: bold;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -15,15 +26,15 @@
 			<a href="Menu.html">Menu</a>
 			<a href="Contact.html">Contact Us</a>
 			<hr />
-			<br />
 		</header>
 
-		<center><form action="fakePage.html" method="POST">
-			Name: <input type="text" name="Name" required /><br />
+		<br />
+		<form action="fakePage.html" method="POST">
+			<p>Name: <input type="text" name="Name" required /><br />
 			<br />
 			Email: <input type="text" name="Email" required /><br />
 			<br />
-			Phone: <input type="text" name="Phone" required /><br />
+			Phone: <input type="text" name="Phone" required /><br /></p>
 			<br />
 			Reason for Inquiry: 
 				<select name="Inquiry">
@@ -48,7 +59,7 @@
 				<input type="checkbox" name="days" value="Friday" />F<br />
 				<br />
 			<input type="submit" value="Send Request" />
-		</form></center>
+		</form>
 		<footer class="footer">
 			<hr />
 			<p>2822 W. Road St., Chicago, IL, 52401</p>

@@ -5,10 +5,41 @@
 		<link rel="stylesheet" type="text/css"
 			href="Styles/restaurantStyles.css" />
 		<style>
-			table {
+			table, tr, td {
 				margin-left: auto;
 				margin-right: auto;
+				text-align: center;
+			}
 
+			td {
+				vertical-align: text-top;
+			}
+
+			strong {
+				font-size: larger;
+			}
+
+			body {
+				background-color:rgb(212, 185, 96);
+			}
+
+			#drinks {
+				border: 1px solid rgb(94, 93, 93);
+			}
+
+			#drinks th, #drinks td {
+				text-align: left;
+				width: 90%;
+				padding: 3px;
+			}
+
+			#drinks tr:nth-child(even) {
+				background-color: rgb(202, 126, 27);
+			}
+
+			#drinks tr:nth-child(odd) {
+				background-color: rgb(41, 92, 231);
+				color: honeydew;
 			}
 		</style>
 	</head>
@@ -22,55 +53,85 @@
 			<a href="Menu.html">Menu</a>
 			<a href="Contact.html">Contact Us</a>
 			<hr />
-			<br />
 		</header>
-
-		<table class="table">
+		
+		<div>
+		<br />
+		<section>
+		<table id="food">
 			<tr>
-				<td><center><strong>Burger and Fries</strong><br />
+				<td><strong>Burger and Fries</strong><br />
 					An American Classic!<br />
 					Your choice - with or without cheese<br />
 					Pickle, onion, tomato, and lettuce<br />
 					Served with our famous thick cut<br />
 					french fries<br />
-					$7.95</center></td>
-				<td><center><strong>Hot Dog and Chips</strong><br />
+					$7.95</td>
+				<td><strong>Hot Dog and Chips</strong><br />
 					A Summer Classic!<br/>
 					Your choice - white or wheat bun<br />
 					Relish, mustard, and ketchup<br />
 					Served with our house-made chips<br />
-					$7.95</center></td>
-				<td><center><strong>Italian Sausage and Peppers</strong><br />
+					$7.95</td>
+				<td><strong>Italian Sausage and Peppers</strong><br />
 					An All-Time Favorite!<br />
 					Your choice - mild or spicy Cole Slaw<br />
 					Served with garlic mashers<br />
-					$10.95</center></td>
+					$10.95</td>
 			</tr>
-			
+
 			<tr>
-				<td><center><strong>Tenderloin Sandwich and Chips</strong><br />
+				<td><strong>Tenderloin Sandwich and Chips</strong><br />
 					Really Hits the Spot!<br />
 					Plain or Sesame Seed Bun<br />
 					Pickle, onion, tomato, and lettuce<br />
 					Served with our house-made chips<br />
-					$8.95</center></td>
-				<td><center><strong>House Salad</strong><br />
+					$8.95</td>
+				<td><strong>House Salad</strong><br />
 					On the Lighter Side<br />
 					Your choice - with or without cheese<br />
 					Iceberg lettuce, tomatoes, peppers<br />
 					Thousand Island or Ranch<br />
 					Dressing served with a dinner roll<br />
-					$6.95</center></td>
-				<td><center><strong>Brisket Sandwich and Fries</strong><br />
+					$6.95</td>
+				<td><strong>Brisket Sandwich and Fries</strong><br />
 					A Taste of Texas!<br />
 					Smoked Brisket on thick-cut<br />
 					Text Toast<br />
 					Cole Slaw<br />
 					Served with our famous thick-cut<br />
 					french fries<br />
-					$7.95</center></td>
+					$7.95</td>
 			</tr>
 		</table>
+		</section>
+
+		<section>
+			<table id="drinks">
+				<th colspan="2">Beverages</th>
+
+				<tr>
+					<td>Root Beer</td>
+					<td>$3.00</td>
+				</tr>
+
+				<tr>
+					<td>Bottled Water</td>
+					<td>$1.25</td>
+				</tr>
+
+				<tr>
+					<td>Lemonade</td>
+					<td>$1.00</td>
+				</tr>
+
+				<tr>
+					<td>Iced Tea</td>
+					<td>$1.25</td>
+				</tr>
+			</table>
+		</section>
+		</div>
 
 		<footer class="footer">
 			<hr />
