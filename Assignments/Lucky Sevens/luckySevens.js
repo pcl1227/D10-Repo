@@ -1,6 +1,6 @@
-function hideResults() {
+/*function hideResults() {
 	document.getElementById("resultsTable").style.display = "none";
-}
+}*/
 
 function diceRoll() {
 	var bet= document.getElementById("bet").value;
@@ -34,13 +34,8 @@ function diceRoll() {
 		}
 	} 
 
-	function displayResults() {
 		document.getElementById("startingBet").innerHTML="$"+bet;
 		document.getElementById("rollCount").innerHTML=rollCount;
 		document.getElementById("moneyMax").innerHTML="$"+maxMoney;
 		document.getElementById("moneyMaxCount").innerHTML=countAtMax;
-	}
-
-	displayResults();
-
 }
